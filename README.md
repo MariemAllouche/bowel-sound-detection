@@ -8,14 +8,6 @@ Develop a proof-of-concept ML model for identifying bowel sounds in audio data a
 
 The model identifies the **start time**, **end time**, and **type** of each bowel sound.
 
-## Results Summary
-
-| Model | Approach | Event Detection F1 | Classification Acc | mAP@0.5 |
-|-------|----------|-------------------|-------------------|---------|
-| **YOLOv8s v2** | Spectrogram → Object Detection | **0.767** | **0.925** | **0.711** |
-| CRNN v1 | Frame-level SED | 0.717 | 0.911 | — |
-| CRNN v2 | + Focal Loss + Oversampling | Training... | Training... | — |
-| YOLOv8s v3 | + Multi-scale + Audio Aug | Training... | Training... | — |
 
 ## Project Structure
 
@@ -51,9 +43,7 @@ bowel_sound_project/
 │       └── extracted_features.csv
 │
 ├── models/                        # Saved model weights
-│   ├── crnn_v1_model.pth
 │   ├── crnn_v2_model.pth
-│   ├── yolo_v2_best.pt
 │   └── yolo_v3_best.pt
 │
 ├── results/                       # Evaluation outputs per model
@@ -61,11 +51,9 @@ bowel_sound_project/
 │   │   ├── predictions_23M74M.tsv
 │   │   ├── predictions_vs_gt.png
 │   │   ├── training_curves.png
-│   │   └── results.json
 │   ├── yolo/
 │   │   ├── predictions_23M74M.tsv
 │   │   ├── predictions_vs_gt.png
-│   │   └── results.json
 │   └── model_comparison.json
 │
 └── presentation/
