@@ -1,4 +1,4 @@
-# Bowel Sound Detection & Classification — DigeHealth Technical Test
+# Bowel Sound Detection & Classification 
 
 ## Goal
 Develop a proof-of-concept ML model for identifying bowel sounds in audio data and differentiating between 3 main classes:
