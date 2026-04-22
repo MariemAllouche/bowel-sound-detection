@@ -1,0 +1,1 @@
+{"model":"CRNN v2","bowel_f1":0.7618,"best_val_f1":0.7655,"event_f1_23M74M":0.589,"cls_acc_23M74M":0.953,"event_f1_AS1":0.658,"cls_acc_AS1":0.993}
