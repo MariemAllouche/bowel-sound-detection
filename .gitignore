@@ -1,0 +1,22 @@
+# Data files (too large for git)
+data/*.wav
+data/*.txt
+
+# Model weights
+models/*.pth
+models/*.pt
+
+# YOLO dataset (generated)
+yolo_dataset/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+_temp*.png
